@@ -10,11 +10,11 @@ function changeTheme() {
     if (current == 'dark') {
         pageContent.style.backgroundColor = "black";
         pageContent.style.color = "white";
-        logo.src="byui-logo-white.png";
+        logo.src="images/byui-logo-white.png";
     } else {
         pageContent.style.backgroundColor = "white";
         pageContent.style.color = "black";
-        logo.src="byui-logo-blue.webp";
+        logo.src="images/byui-logo-blue.webp";
     }
 }           
                     
