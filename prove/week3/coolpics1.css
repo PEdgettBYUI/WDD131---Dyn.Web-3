@@ -1,0 +1,57 @@
+/* NOTE: Defaults designed for Mobile Devices */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: "Arial", sans-serif;
+}
+footer p {
+    margin-bottom: 0;
+}
+h1 {
+    margin-top: 0;
+}
+header, footer {
+    background-color: skyblue;
+    color: white;
+    width: 100%;
+}
+header {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+main {
+    text-align: center;
+}
+.gallery {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* You smell bad, feel bad about it. */
+figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* Tablet Scale */
+@media screen and (min-width: 700px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop Scale */
+@media screen and (min-width: 1080px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
