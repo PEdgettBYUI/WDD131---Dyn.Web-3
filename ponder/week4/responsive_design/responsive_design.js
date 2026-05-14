@@ -1,10 +1,13 @@
+var menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+console.log(menuBtn);
+console.log(menu);
 
-// .change .bar1 {
-//   transform: translate(0, 11px) rotate(-45deg);
-// }
-// .change .bar2 {opacity: 0;}
+menuBtn.addEventListener("click", toggleMenu);
 
-// .change .bar3 {
-//   transform: translate(0, -11px) rotate(45deg);
-// }
-          
+function toggleMenu() {
+    menu.classList.toggle("hide");
+    menuBtn.classList.toggle("change")
+
+    
+}

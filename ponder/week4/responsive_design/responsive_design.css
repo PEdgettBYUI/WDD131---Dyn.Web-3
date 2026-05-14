@@ -33,6 +33,19 @@ nav a:hover {
     text-decoration: none;
     color: #616061;
 }
+.hide {
+    display: none;
+}
+.menu {
+    text-align: center;
+}
+.menu a {
+    padding: 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    border-top: 1px solid gray;   
+}
 .menu-btn {
     cursor: pointer;
     border: none;
@@ -43,10 +56,23 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: all 0.3s ease;  /* Used to make the animation smooth */
 }
 footer {
     text-align: center;
 }
+
+/* For Menu Animation - To X and "Hamburger" Menu */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Tablet Scale */
 @media screen and (min-width: 700px) {
     main {
         display: grid;
@@ -62,7 +88,7 @@ footer {
         text-align: right;
     }
 }
-
+/* Desktop Scale */
 @media screen and (min-width: 1000px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
