@@ -8,6 +8,4 @@ menuBtn.addEventListener("click", toggleMenu);
 function toggleMenu() {
     menu.classList.toggle("hide");
     menuBtn.classList.toggle("change")
-
-    
 }
