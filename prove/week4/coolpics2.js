@@ -22,11 +22,15 @@ gallery.addEventListener('click', openModal);
 
 function openModal(event) {
     // Code to show modal  - Use event parameter 'e'
-    console.log(event.target.src);
+    // console.log(event.target.src);
+    // console.log(event.target.alt);
+
     let imageSrc = event.target.src;
+    let imageAlt = event.target.alt;
 
     // Select img tag inside dialog, give it src
     modalImage.src = imageSrc.replace("-sm.", "-full.");
+    modalImage.alt = imageAlt.replace("An image of Norris Geyser", "A LARGE image of Norris Geyser.")
     // console.log(typeof(imageSrc))   //NOTE: typeof() can be used to find the type of a variable
     modal.showModal();
 }
