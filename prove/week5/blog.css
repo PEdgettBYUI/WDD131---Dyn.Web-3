@@ -1,0 +1,80 @@
+/* Designed for Mobile view First */
+body {
+    margin: 0;
+    padding: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+nav, footer {
+    text-align: right;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    border-color: gold;
+}
+nav a{
+    padding-right: 20px;
+    color: #a9042e;
+
+}
+main{
+    justify-self: center;
+}
+.book {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    max-width: 600px;
+}
+.review_info {
+    grid-column: 2/3;
+    display: grid;
+    justify-self: right;
+}
+.review_info p {
+    margin: 7px 0 7px 0;
+}
+.main_stuff {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    place-items: center;
+}
+.main_stuff h2 {
+    color: #a9042e;
+}
+.main_stuff p {
+    margin: 10px 20px;
+}
+.main_stuff img {
+    max-width: 40%;
+}
+footer {
+    border-bottom: none;
+    text-align: center;
+}
+
+/* Tablet View and Up */
+@media screen and (min-width: 700px) {
+    .book{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .review_info{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-right: 20px;
+        
+    }
+    .main_stuff{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding-left: 30px;
+        border-left: 4px solid gold;
+    }
+    .main_stuff h2{
+        justify-self: left;
+    }
+
+}
