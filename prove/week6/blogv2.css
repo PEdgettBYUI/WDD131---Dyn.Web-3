@@ -23,7 +23,7 @@ main{
 }
 .book {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
     max-width: 600px;
 }
@@ -58,6 +58,7 @@ footer {
 /* Tablet View and Up */
 @media screen and (min-width: 700px) {
     .book{
+        grid-template-columns: 1fr 2fr;
         padding-top: 30px;
         padding-bottom: 30px;
     }
