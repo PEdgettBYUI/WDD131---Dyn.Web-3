@@ -46,16 +46,16 @@
                 <input id="eventDate" name="eventDate" type="date" required />
             </div>
 
-            <div id="numContainer" class="codes">
-                <section id="studentId" class="full" hidden>
+            <div id="numContainer" class="codes full">
+                <div id="studentChoice" class="field" hidden>
                     <label for="studentId">Student #</label>
-                    <input id="studentId" name="studentId" type="number" />
-                </section>
+                    <input id="studentId" name="studentId" type="text" />
+                </div>
 
-                <section id="guestAccess" class="full" hidden>
+                <div id="guestChoice" class="field" hidden>
                     <label for="guestAccess">Access Code</label>
                     <input id="guestAccess" name="guestAccess" type="text" />
-                </section>
+                </div>
             </div>
 
             <button class="full" type="submit">Create Ticket</button>
