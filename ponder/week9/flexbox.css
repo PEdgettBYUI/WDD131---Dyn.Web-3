@@ -1,0 +1,52 @@
+/* Mobile First Design */
+/* Defaults are meant for mobile phone resolutions and screens */
+
+/* Grid is for 2D, Flexbox is for 1D */
+/* For practice reasons, we're only using flexbox here */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Flex determines axis: horizontal by default */
+/* Justify-content: moves things along that flex direction */
+/* align-items: moves things along the perpendicular axis from flex direction */
+.main-nav {
+    display: flex;
+    justify-content: right;
+    gap: 0.5em;
+    list-style-type: none;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+/* Mediaquery for Tablet+ size screens */
+@media screen and (min-width: 700px) {
+    .media-card {
+        display: flex;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gallery .media-card {
+        max-width: 48%;
+    }
+
+
+}
